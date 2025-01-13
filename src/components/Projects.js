@@ -16,7 +16,13 @@ const Container = styled.div`
   }
 
   @media (max-width: 480px) {
-    width: 130%;
+    width: 157%;
+    margin-bottom: 60%;
+  }
+
+  @media (max-width: 320px) {
+    width: 190%;
+    margin-bottom: 100%;
   }
 `;
 
@@ -67,6 +73,7 @@ const ProjectCard = styled.div`
   @media (max-width: 480px) {
     padding: 1.25rem;
     flex-direction: column;
+    margin: 1.563rem;
   }
 `;
 
@@ -96,7 +103,6 @@ const DescriptionTitle = styled.div`
   font-weight: bold;
 
   @media (max-width: 480px) {
-    font-size: 1.125rem;
     margin: 1.5rem;
   }
 `;
@@ -107,7 +113,7 @@ const DescriptionProject = styled.p`
   max-width: 80%;
 
   @media (max-width: 768px) {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 `;
 
@@ -116,11 +122,15 @@ const DivIcons = styled.div``;
 const IconsProject = styled.a`
   color: #fff;
   font-size: 1.5rem;
-  margin: 0.5rem;
+  margin: 1rem;
   transition: all 0.3s ease-in-out;
 
   &:hover {
     color: #00fbff;
+  }
+
+  @media (max-width: 375px) {
+    padding-bottom: 0.625rem;
   }
 `;
 

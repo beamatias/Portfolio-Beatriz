@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import CvBeatriz from "../assets/pdf/CV-Beatriz-Matias.pdf";
 
 const StyledHeader = styled.header`
   background-color: rgb(195, 209, 209);
@@ -42,6 +43,21 @@ const NavLink = styled(Link)`
   }
 `;
 
+const DownloadButton = styled.a`
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: #00fbff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #00a3b0;
+  }
+`;
+
 const scrollToSection = (id) => {
   const section = document.getElementById(id);
   if (section) {
@@ -68,6 +84,11 @@ function NavBar() {
             <NavLink to="#" onClick={() => scrollToSection("projects")}>
               Projects
             </NavLink>
+          </NavItem>
+          <NavItem>
+            <DownloadButton href={CvBeatriz} download="CvBeatriz">
+              Baixar CV
+            </DownloadButton>
           </NavItem>
         </ListNav>
       </Nav>

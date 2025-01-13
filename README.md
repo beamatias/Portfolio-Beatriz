@@ -15,7 +15,7 @@ Este é o meu portfólio pessoal, criado com objetivo de apresentar meus projeto
 ### Clone o repositório:
 
 ```bash
-git clone https://github.com/beamatias/Portfolio.git
+git clone https://github.com/beamatias/Portfolio-Beatriz.git
 ```
 ### Instale as dependências:
 

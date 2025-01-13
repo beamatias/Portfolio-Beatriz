@@ -17,7 +17,14 @@ const ContainerMain = styled.div`
 
   @media (max-width: 480px) {
     width: 100%;
-    margin: 4.688rem;
+    margin: 40%;
+    padding-bottom: 20%;
+    flex-direction: column;
+  }
+  @media (max-width: 320px) {
+    width: 100%;
+    margin: 55%;
+    padding-bottom: 20%;
     flex-direction: column;
   }
 `;
@@ -34,7 +41,7 @@ const ContainerInfo = styled.div`
 
 const TextContent = styled.p`
   font-family: "Montserrat", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: #fff;
   margin: 0.625rem 1.25rem;
 `;
@@ -43,10 +50,6 @@ const MainHeading = styled.h1`
   color: #00fbff;
   margin-bottom: 1rem;
   font-size: 2rem;
-
-  @media (max-width: 480px) {
-    font-size: 1.75rem;
-  }
 `;
 
 const Heading = styled.h2`

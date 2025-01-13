@@ -16,7 +16,7 @@ import {
 
 const ContainerMain = styled.div`
   background-color: rgb(137, 166, 166);
-  padding: 2.5rem 2.5rem;
+  padding: 2.5rem;
 
   @media (max-width: 1440px) {
     width: 100%;
@@ -25,7 +25,11 @@ const ContainerMain = styled.div`
 
   @media (max-width: 480px) {
     width: 100%;
-    padding: 5.813rem;
+    padding: 9rem;
+  }
+
+  @media (max-width: 320px) {
+    width: 124%;
   }
 `;
 
@@ -35,6 +39,10 @@ const TitleSkills = styled.h1`
   align-items: center;
   font-size: 1.75rem;
   color: #fff;
+
+  @media (max-width: 320px) {
+    margin-left: 16%;
+  }
 `;
 
 const SkillsContainer = styled.div`
@@ -53,6 +61,10 @@ const SkillCard = styled.div`
   border-radius: 0.625rem;
   padding: 1.25rem;
   text-align: center;
+
+  &:hover {
+    background-color: rgb(50, 150, 150);
+    color: #fff;
 `;
 
 const Icon = styled.div`

@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 const ContainerFooter = styled.footer`
   background-color: rgb(195, 209, 209);
-  width: 100%;
   text-align: center;
   bottom: 0;
   left: 0;
   padding: 0.9375rem 0;
+  min-width: 100vh;
 
   @media (max-width: 1440px) {
     width: 111%;
@@ -21,21 +21,11 @@ const ContainerFooter = styled.footer`
 
   @media (max-width: 768px) {
     width: 118%;
-    padding: 10px;
+    padding: 0.625rem;
   }
 
   @media (max-width: 480px) {
-    width: 100%;
-    padding: 0.313rem 5.813rem;
-  }
-
-  @media (max-width: 480px) {
-    width: 158%;
-    padding: 5px;
-  }
-
-  @media (max-width: 320px) {
-    width: 165%;
+    width: 162%;
   }
 `;
 
