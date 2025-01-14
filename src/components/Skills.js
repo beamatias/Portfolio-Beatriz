@@ -47,8 +47,9 @@ const TitleSkills = styled.h1`
   font-size: 1.75rem;
   color: #fff;
 
-  @media (max-width: 320px) {
-    margin-left: 16%;
+  @media (max-width: 480px) {
+    font-size: 3rem;
+    margin-bottom: 3rem;
   }
 `;
 
@@ -73,10 +74,15 @@ const SkillCard = styled.div`
     background-color: rgb(50, 150, 150);
     color: #fff;
   }
+
+  @media (max-width: 480px) {
+    padding: 1.875rem;
+    font-size: 1.5rem;
+  }
 `;
 
 const Icon = styled.div`
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 `;
 
 const OfficeIconsContainer = styled.div`

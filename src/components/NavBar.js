@@ -5,13 +5,17 @@ import CvBeatriz from "../assets/pdf/CV-Beatriz-Matias.pdf";
 
 const StyledHeader = styled.header`
   background-color: rgb(195, 209, 209);
-  padding: 10px;
+  padding: 0.625rem;
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
+
+  @media (max-width: 480px) {
+    padding: 1.25rem;
+  }
 `;
 
 const Nav = styled.nav`
@@ -26,13 +30,13 @@ const Nav = styled.nav`
 const ListNav = styled.ul``;
 
 const NavItem = styled.li`
-  margin: 0 10px;
+  margin: 0 0.625rem;
 `;
 
 const NavLink = styled(Link)`
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-decoration: none;
   color: #333;
   transition: all 0.3s ease-in-out;
@@ -41,11 +45,15 @@ const NavLink = styled(Link)`
     color: #00fbff;
     transition: all 0.3s ease-in-out;
   }
+
+  @media (max-width: 480px) {
+    font-size: 1.875rem;
+  }
 `;
 
 const DownloadButton = styled.a`
-  margin-left: 20px;
-  padding: 10px 20px;
+  margin-left: 1.25rem;
+  padding: 0.625rem 1.25rem;
   background-color: #00fbff;
   color: #fff;
   text-decoration: none;
@@ -55,6 +63,11 @@ const DownloadButton = styled.a`
 
   &:hover {
     background-color: #00a3b0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.25rem 2.5;
+    font-size: 1.875rem;
   }
 `;
 

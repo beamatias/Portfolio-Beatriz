@@ -12,23 +12,7 @@ const Container = styled.div`
   padding-bottom: 6.25rem;
 
   @media (max-width: 480px) {
-    padding: 70% 0 90% 0;
   }
-
-  /*
-  @media (max-width: 1024px) {
-    width: 110%;
-  }
-
-  @media (max-width: 480px) {
-    width: 157%;
-    margin-bottom: 60%;
-  }
-
-  @media (max-width: 320px) {
-    width: 190%;
-    margin-bottom: 100%;
-  }*/
 `;
 
 const TitleProjects = styled.h1`
@@ -36,7 +20,8 @@ const TitleProjects = styled.h1`
   font-size: 2rem;
 
   @media (max-width: 480px) {
-    margin-bottom: 2.188rem;
+    font-size: 3rem;
+    margin: 8rem 0 5rem 0;
   }
 `;
 
@@ -45,15 +30,11 @@ const CarouselContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 95%;
+  width: 100%;
   height: 25rem;
 
-  @media (max-width: 768px) {
-    width: 100%;
-  }
-
   @media (max-width: 480px) {
-    width: 98%;
+    width: 100%;
   }
 `;
 
@@ -65,9 +46,9 @@ const ProjectCard = styled.div`
   align-items: center;
   color: #fff;
   transition: opacity 0.5s ease;
-  position: absolute; /* Para sobrepor os cards */
+  position: absolute;
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
-  padding: 3.125rem; /* Espaçamento interno */
+  padding: 3.125rem;
   margin: 0 auto;
 
   @media (max-width: 768px) {
@@ -92,6 +73,10 @@ const ProjectImage = styled.img`
   @media (max-width: 768px) {
     width: 18.75rem;
   }
+
+  @media (max-width: 480px) {
+    width: 90%;
+  }
 `;
 
 const ContainerDescriptions = styled.div`
@@ -107,6 +92,7 @@ const DescriptionTitle = styled.div`
   font-weight: bold;
 
   @media (max-width: 480px) {
+    font-size: 2.5rem;
     margin: 1.5rem;
   }
 `;
@@ -114,10 +100,10 @@ const DescriptionTitle = styled.div`
 const DescriptionProject = styled.p`
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
-  max-width: 80%;
+  max-width: 90%;
 
   @media (max-width: 768px) {
-    font-size: 1.25rem;
+    font-size: 2rem;
   }
 `;
 
@@ -131,6 +117,11 @@ const IconsProject = styled.a`
 
   &:hover {
     color: #00fbff;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 3rem;
+    padding-bottom: 13rem;
   }
 
   @media (max-width: 375px) {
@@ -152,6 +143,10 @@ const Arrow = styled.button`
 
   &:hover {
     color: #00fbff;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 4rem;
   }
 `;
 

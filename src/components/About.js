@@ -18,7 +18,7 @@ const ContainerMain = styled.div`
 
   @media (max-width: 480px) {
     width: 100%;
-    margin: 40%;
+    margin-left: 40%;
     padding-bottom: 20%;
     flex-direction: column;
   }
@@ -47,7 +47,8 @@ const TextContent = styled.p`
   margin: 0.625rem 1.25rem;
 
   @media (max-width: 480px) {
-    font-size: 1.4rem; /* Increase font size for mobile */
+    width: 30rem;
+    font-size: 2rem;
   }
 `;
 
@@ -57,7 +58,8 @@ const MainHeading = styled.h1`
   font-size: 2rem;
 
   @media (max-width: 480px) {
-    font-size: 2rem; /* Increase font size for mobile */
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
   }
 `;
 
@@ -67,11 +69,8 @@ const Heading = styled.h2`
   font-size: 1.75rem;
 
   @media (max-width: 480px) {
-    font-size: 1.7rem; /* Increase font size for mobile */
-  }
-
-  @media (max-width: 480px) {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    width: 40rem; /* Increase font size for mobile */
   }
 `;
 
@@ -84,8 +83,7 @@ const ImagePerfil = styled.img`
   box-shadow: 0.9375rem 0.9375rem 0.1875rem rgba(0, 251, 255, 0.73);
 
   @media (max-width: 480px) {
-    margin: 1.6rem 0 0 0;
-    box-shadow: rgba(0, 251, 255, 0.73);
+    max-width: 37.5rem;
   }
 `;
 
@@ -103,6 +101,11 @@ const SocialIconLink = styled.a`
 
   &:hover {
     color: rgb(2, 131, 133);
+  }
+
+  @media (max-width: 480px) {
+    margin: 1rem;
+    font-size: 3rem;
   }
 `;
 
