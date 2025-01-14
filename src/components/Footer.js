@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const ContainerFooter = styled.footer`
@@ -6,16 +6,9 @@ const ContainerFooter = styled.footer`
   width: 100%;
   position: fixed;
   text-align: center;
-  padding: 0.9375rem 0;
   bottom: 0;
-  left: 0;
   flex-shrink: 0;
-  transition: transform 0.3s ease;
-  transform: translateY(0);
-
-  &.hidden {
-    transform: translateY(100%);
-  }
+  padding: 0.9375rem 0;
 `;
 
 const DescriçãoFooter = styled.p`
@@ -29,27 +22,8 @@ const DescriçãoFooter = styled.p`
 `;
 
 const Footer = () => {
-  const [isHidden, setIsHidden] = useState(false);
-  let lastScrollY = window.scrollY;
-
-  const handleScroll = () => {
-    if (window.scrollY > lastScrollY) {
-      setIsHidden(false);
-    } else {
-      setIsHidden(true);
-    }
-    lastScrollY = window.scrollY;
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <ContainerFooter className={isHidden ? "hidden" : ""}>
+    <ContainerFooter>
       <DescriçãoFooter>Projeto Desenvolvido por Beatriz Matias</DescriçãoFooter>
     </ContainerFooter>
   );

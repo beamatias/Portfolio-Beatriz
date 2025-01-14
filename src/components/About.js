@@ -22,6 +22,7 @@ const ContainerMain = styled.div`
     padding-bottom: 20%;
     flex-direction: column;
   }
+
   @media (max-width: 320px) {
     width: 100%;
     margin: 60%;
@@ -70,7 +71,7 @@ const Heading = styled.h2`
 
   @media (max-width: 480px) {
     font-size: 2.5rem;
-    width: 40rem; /* Increase font size for mobile */
+    width: 40rem;
   }
 `;
 
