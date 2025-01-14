@@ -9,6 +9,7 @@ const ContainerMain = styled.div`
   align-items: center;
   margin: 12.5rem;
   flex-direction: row;
+  max-width: 100vw;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -23,7 +24,7 @@ const ContainerMain = styled.div`
   }
   @media (max-width: 320px) {
     width: 100%;
-    margin: 55%;
+    margin: 60%;
     padding-bottom: 20%;
     flex-direction: column;
   }
@@ -44,18 +45,30 @@ const TextContent = styled.p`
   font-size: 1.25rem;
   color: #fff;
   margin: 0.625rem 1.25rem;
+
+  @media (max-width: 480px) {
+    font-size: 1.4rem; /* Increase font size for mobile */
+  }
 `;
 
 const MainHeading = styled.h1`
   color: #00fbff;
   margin-bottom: 1rem;
   font-size: 2rem;
+
+  @media (max-width: 480px) {
+    font-size: 2rem; /* Increase font size for mobile */
+  }
 `;
 
 const Heading = styled.h2`
   color: #00fbff;
   margin-bottom: 1rem;
   font-size: 1.75rem;
+
+  @media (max-width: 480px) {
+    font-size: 1.7rem; /* Increase font size for mobile */
+  }
 
   @media (max-width: 480px) {
     font-size: 1.5rem;

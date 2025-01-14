@@ -25,7 +25,14 @@ const ContainerFooter = styled.footer`
   }
 
   @media (max-width: 480px) {
-    width: 162%;
+    width: 44rem;
+  }
+  @media (max-width: 480px) {
+    width: 43.5rem;
+  }
+
+  @media (max-width: 320px) {
+    width: 43rem;
   }
 `;
 

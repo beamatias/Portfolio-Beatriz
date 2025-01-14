@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const Container = styled.div`
-  min-height: 37.5rem;
+  min-width: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,6 +11,11 @@ const Container = styled.div`
   margin: 1.875rem;
   padding-bottom: 6.25rem;
 
+  @media (max-width: 480px) {
+    padding: 70% 0 90% 0;
+  }
+
+  /*
   @media (max-width: 1024px) {
     width: 110%;
   }
@@ -23,7 +28,7 @@ const Container = styled.div`
   @media (max-width: 320px) {
     width: 190%;
     margin-bottom: 100%;
-  }
+  }*/
 `;
 
 const TitleProjects = styled.h1`
@@ -31,7 +36,6 @@ const TitleProjects = styled.h1`
   font-size: 2rem;
 
   @media (max-width: 480px) {
-    font-size: 1.5rem;
     margin-bottom: 2.188rem;
   }
 `;

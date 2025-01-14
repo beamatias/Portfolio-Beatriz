@@ -17,7 +17,12 @@ import {
 const ContainerMain = styled.div`
   background-color: rgb(137, 166, 166);
   padding: 2.5rem;
+  min-width: 100vh;
 
+  @media (max-width: 480px) {
+    padding: 40% 10% 40% 10%;
+  }
+  /*
   @media (max-width: 1440px) {
     width: 100%;
     padding: 5rem;
@@ -31,6 +36,8 @@ const ContainerMain = styled.div`
   @media (max-width: 320px) {
     width: 124%;
   }
+
+  */
 `;
 
 const TitleSkills = styled.h1`
@@ -65,6 +72,7 @@ const SkillCard = styled.div`
   &:hover {
     background-color: rgb(50, 150, 150);
     color: #fff;
+  }
 `;
 
 const Icon = styled.div`
