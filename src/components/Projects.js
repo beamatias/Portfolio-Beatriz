@@ -184,6 +184,16 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Fokus",
+      description:
+        "Este é um projeto desenvolvido para ajudar os usuários a manterem o foco durante seus períodos de estudo. O objetivo principal é proporcionar uma experiência tranquila e sem distrações, com pequenas pausas inclusas, incentivando a concentração e o rendimento acadêmico.",
+      image: imgFokus,
+      socialLinks: {
+        github: "https://github.com/beamatias/Fokus",
+        live: "https://fokus-ecru.vercel.app/",
+      },
+    },
+    {
       title: "Palavra Secreta",
       description:
         "Este é um jogo da palavra secreta para testar a capacidade cognitiva. O objetivo do jogo é adivinhar uma palavra secreta, chutando letras uma a uma. Em cada tentativa, as letras corretas são reveladas e as incorretas são marcadas.",
@@ -201,16 +211,6 @@ const Projects = () => {
       socialLinks: {
         github: "https://github.com/beamatias/Portfolio-Beatriz",
         live: "https://portfolio-beatriz-inky.vercel.app/",
-      },
-    },
-    {
-      title: "Fokus",
-      description:
-        "Este é um projeto desenvolvido para ajudar os usuários a manterem o foco durante seus períodos de estudo. O objetivo principal é proporcionar uma experiência tranquila e sem distrações, com pequenas pausas inclusas, incentivando a concentração e o rendimento acadêmico.",
-      image: imgFokus,
-      socialLinks: {
-        github: "https://github.com/beamatias/Fokus",
-        live: "https://fokus-ecru.vercel.app/",
       },
     },
   ];

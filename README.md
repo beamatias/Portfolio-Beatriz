@@ -1,8 +1,8 @@
-# Portfólio Pessoal
+# Portfólio Beatriz Matias
 
 ![Capa meu Portfólio](./src/assets/img/Capa-portfolio.png)
 
-Este é o meu portfólio pessoal, criado com objetivo de apresentar meus projetos e habilidades como desenvolvedora front-end. 🚀
+Seja bem-vindo(a) ao meu portfólio! Criado com objetivo de apresentar meus projetos e habilidades como desenvolvedora front-end. 🚀
 
 ## Tecnologias Utilizadas
 
@@ -10,24 +10,11 @@ Este é o meu portfólio pessoal, criado com objetivo de apresentar meus projeto
 * JavaScript
 * Styled Components
 
-## Como executar o projeto
+## 🌐 Acesse o site: [Clique aqui](https://portfolio-beatriz-inky.vercel.app/)
 
-### Clone o repositório:
+## Contato:
 
-```bash
-git clone https://github.com/beamatias/Portfolio-Beatriz.git
-```
-### Instale as dependências:
+### Email: [alvinobeatriz01@gmail.com](alvinobeatriz01@gmail.com)
+### LinkedIn: [www.linkedin.com/in/beamatias](www.linkedin.com/in/beamatias)
 
-```Bash
-cd portfolio
-```
-
-```Bash
-npm install
-```
-
-
-## Acesse o site:
-
-[Clique aqui](https://portfolio-beatriz-inky.vercel.app/)
+### Obrigada por visitar meu portfólio! Fique à vontade para entrar em contato! ✨
