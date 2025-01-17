@@ -26,3 +26,8 @@ cd portfolio
 ```Bash
 npm install
 ```
+
+
+## Acesse o site:
+
+[Clique aqui](https://portfolio-beatriz-inky.vercel.app/)
