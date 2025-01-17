@@ -20,22 +20,14 @@ const ContainerMain = styled.div`
   @media (max-width: 480px) {
     text-align: center;
     flex-direction: column;
-    padding-left: 6rem;
+    margin: 5rem;
+    padding-left: 7rem;
   }
-
-  /* 
-  @media (max-width: 320px) {
-    width: 100%;
-    margin: 60%;
-    padding-bottom: 20%;
-    flex-direction: column;
-  }
-    */
 `;
 
 const ContainerInfo = styled.div`
   width: 100%;
-  max-width: 31.25rem;
+  max-width: 35rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +78,8 @@ const ImagePerfil = styled.img`
   box-shadow: 0.9375rem 0.9375rem 0.1875rem rgba(0, 251, 255, 0.73);
 
   @media (max-width: 480px) {
-    max-width: 38.5rem;
+    width: 100%;
+    height: auto;
   }
 `;
 
