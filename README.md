@@ -12,9 +12,6 @@ Seja bem-vindo(a) ao meu portfólio! Criado com objetivo de apresentar meus proj
 
 ## 🌐 Acesse o site: [Clique aqui](https://portfolio-beatriz-inky.vercel.app/)
 
-## Contato:
-
-### Email: [alvinobeatriz01@gmail.com](alvinobeatriz01@gmail.com)
-### LinkedIn: [www.linkedin.com/in/beamatias](www.linkedin.com/in/beamatias)
+## E-mail para contato: [alvinobeatriz01@gmail.com](alvinobeatriz01@gmail.com)
 
 ### Obrigada por visitar meu portfólio! Fique à vontade para entrar em contato! ✨
