@@ -19,25 +19,13 @@ const ContainerMain = styled.div`
   padding: 2.5rem;
   min-width: 100vh;
 
+  @media (max-width: 768px) {
+    padding: 11rem;
+  }
+
   @media (max-width: 480px) {
     padding: 40% 10% 40% 10%;
   }
-  /*
-  @media (max-width: 1440px) {
-    width: 100%;
-    padding: 5rem;
-  }
-
-  @media (max-width: 480px) {
-    width: 100%;
-    padding: 9rem;
-  }
-
-  @media (max-width: 320px) {
-    width: 124%;
-  }
-
-  */
 `;
 
 const TitleSkills = styled.h1`

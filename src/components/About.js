@@ -7,9 +7,10 @@ const ContainerMain = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 12.5rem;
+  margin: 0;
   flex-direction: row;
   max-width: 100vw;
+  padding: 4rem;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -17,15 +18,12 @@ const ContainerMain = styled.div`
   }
 
   @media (max-width: 480px) {
-    width: 100%;
     text-align: center;
-    margin: 0;
-    padding-left: 12rem;
-    padding-bottom: 30%;
     flex-direction: column;
+    padding-left: 6rem;
   }
 
-  /*
+  /* 
   @media (max-width: 320px) {
     width: 100%;
     margin: 60%;
@@ -52,7 +50,7 @@ const TextContent = styled.p`
   margin: 0.625rem 1.25rem;
 
   @media (max-width: 480px) {
-    width: 30rem;
+    width: 40rem;
     font-size: 2rem;
   }
 `;
@@ -88,7 +86,7 @@ const ImagePerfil = styled.img`
   box-shadow: 0.9375rem 0.9375rem 0.1875rem rgba(0, 251, 255, 0.73);
 
   @media (max-width: 480px) {
-    max-width: 37.5rem;
+    max-width: 38.5rem;
   }
 `;
 

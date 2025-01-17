@@ -15,13 +15,18 @@ const Container = styled.div`
   margin: 1.875rem;
   padding-bottom: 6.25rem;
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
+    width: 120%;
   }
 `;
 
 const TitleProjects = styled.h1`
   color: #fff;
   font-size: 2rem;
+
+  @media (max-width: 768px) {
+    margin: 8rem 0 5rem 0;
+  }
 
   @media (max-width: 480px) {
     font-size: 3rem;
@@ -127,6 +132,10 @@ const IconsProject = styled.a`
     color: #00fbff;
   }
 
+  @media (max-width: 768px) {
+    padding-bottom: 20rem;
+  }
+
   @media (max-width: 480px) {
     font-size: 3rem;
     padding-bottom: 13rem;
@@ -134,6 +143,10 @@ const IconsProject = styled.a`
 
   @media (max-width: 375px) {
     padding-bottom: 0.625rem;
+  }
+
+  @media (max-width: 375px) {
+    padding-bottom: 10rem;
   }
 `;
 
