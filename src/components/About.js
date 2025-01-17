@@ -20,8 +20,8 @@ const ContainerMain = styled.div`
   @media (max-width: 480px) {
     text-align: center;
     flex-direction: column;
-    margin: 5rem;
-    padding-left: 7rem;
+    margin: 4rem;
+    padding-left: 8rem;
   }
 `;
 
