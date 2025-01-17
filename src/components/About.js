@@ -18,17 +18,21 @@ const ContainerMain = styled.div`
 
   @media (max-width: 480px) {
     width: 100%;
-    margin-left: 40%;
-    padding-bottom: 20%;
+    text-align: center;
+    margin: 0;
+    padding-left: 12rem;
+    padding-bottom: 30%;
     flex-direction: column;
   }
 
+  /*
   @media (max-width: 320px) {
     width: 100%;
     margin: 60%;
     padding-bottom: 20%;
     flex-direction: column;
   }
+    */
 `;
 
 const ContainerInfo = styled.div`

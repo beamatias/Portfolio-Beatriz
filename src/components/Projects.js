@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
+import imgPortfolio from "../assets/img/Capa-portfolio.png";
+import imgFokus from "../assets/img/img-fokus.png";
+import imgSecretWord from "../assets/img/img-secret-word.png";
+
 const Container = styled.div`
   min-width: 100vh;
   display: flex;
@@ -38,7 +42,12 @@ const CarouselContainer = styled.div`
   }
 `;
 
-const ProjectCard = styled.div`
+const ProjectCard = styled.div.attrs((props) => ({
+  style: {
+    opacity: props.isVisible ? 1 : 0,
+    display: props.isVisible ? "flex" : "none", // Adiciona display flex ou none
+  },
+}))`
   height: 100%;
   border-radius: 0.625rem;
   display: flex;
@@ -47,7 +56,6 @@ const ProjectCard = styled.div`
   color: #fff;
   transition: opacity 0.5s ease;
   position: absolute;
-  opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
   padding: 3.125rem;
   margin: 0 auto;
 
@@ -166,19 +174,27 @@ const Projects = () => {
       title: "Palavra Secreta",
       description:
         "Este é um jogo da palavra secreta para testar a capacidade cognitiva. O objetivo do jogo é adivinhar uma palavra secreta, chutando letras uma a uma. Em cada tentativa, as letras corretas são reveladas e as incorretas são marcadas.",
-      image:
-        "https://github.com/beamatias/Secret-Word/blob/main/src/img/img-secret-word.png?raw=true", // Substitua pela URL da imagem
+      image: imgSecretWord,
       socialLinks: {
         github: "https://github.com/beamatias/Secret-Word",
         live: "https://secret-word-sigma-five.vercel.app/",
       },
     },
     {
+      title: "Portfólio Pessoal",
+      description:
+        "Este é meu Portfólio pessoal, onde você encontra informaçõe sobre mim e meus projetos.",
+      image: imgPortfolio,
+      socialLinks: {
+        github: "https://github.com/beamatias/Portfolio-Beatriz",
+        live: "https://portfolio-beatriz-inky.vercel.app/",
+      },
+    },
+    {
       title: "Fokus",
       description:
         "Este é um projeto desenvolvido para ajudar os usuários a manterem o foco durante seus períodos de estudo. O objetivo principal é proporcionar uma experiência tranquila e sem distrações, com pequenas pausas inclusas, incentivando a concentração e o rendimento acadêmico.",
-      image:
-        "https://private-user-images.githubusercontent.com/140823685/297428670-fe22ddc5-a451-4d3e-a562-f2bb6a2cd084.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzYzODMyNDQsIm5iZiI6MTczNjM4Mjk0NCwicGF0aCI6Ii8xNDA4MjM2ODUvMjk3NDI4NjcwLWZlMjJkZGM1LWE0NTEtNGQzZS1hNTYyLWYyYmI2YTJjZDA4NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDEwOVQwMDM1NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MTdjZTFhNmMxNGMwY2M2MTlkNTNkZGY3MDNjNTQ3MjZhOTNhNjBhMmQ0ZDZjZTU4NzIyZGEzY2Q3NTBiODdjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Xwz5Tn2rwOiCQBaPnqpJL72fzV1DPkO8NyqrQFTHyfo",
+      image: imgFokus,
       socialLinks: {
         github: "https://github.com/beamatias/Fokus",
         live: "https://fokus-ecru.vercel.app/",
