@@ -84,17 +84,17 @@ function NavBar() {
       <Nav>
         <ListNav>
           <NavItem>
-            <NavLink to="#" onClick={() => scrollToSection("about")}>
+            <NavLink to="/about" onClick={() => scrollToSection("about")}>
               About
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="#" onClick={() => scrollToSection("skills")}>
+            <NavLink to="/skills" onClick={() => scrollToSection("skills")}>
               Skills
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="#" onClick={() => scrollToSection("projects")}>
+            <NavLink to="/projects" onClick={() => scrollToSection("projects")}>
               Projects
             </NavLink>
           </NavItem>
