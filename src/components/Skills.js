@@ -15,7 +15,7 @@ import {
 } from "react-icons/fa";
 
 const ContainerMain = styled.div`
-  background-color: rgb(137, 166, 166);
+  background-color: #000;
   padding: 2.5rem;
   min-width: 100vh;
 
@@ -53,14 +53,15 @@ const SkillsContainer = styled.div`
 `;
 
 const SkillCard = styled.div`
-  background-color: rgb(75, 206, 208);
+  background: linear-gradient(to top, rgb(71, 109, 116), #002430);
   border-radius: 0.625rem;
   padding: 1.25rem;
   text-align: center;
+  color: rgba(255, 255, 255, 0.9);
 
   &:hover {
     background-color: rgb(50, 150, 150);
-    color: #fff;
+    color: #000;
   }
 
   @media (max-width: 480px) {

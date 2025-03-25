@@ -73,9 +73,9 @@ const ImagePerfil = styled.img`
   width: 100%;
   max-width: 18.75rem;
   height: auto;
-  border-radius: 2.1875rem;
+  border-radius: 20rem;
+  border: 0.2rem solid #00fbff;
   margin: 1.875rem;
-  box-shadow: 0.9375rem 0.9375rem 0.1875rem rgba(0, 251, 255, 0.73);
 
   @media (max-width: 480px) {
     width: 100%;
@@ -96,7 +96,7 @@ const SocialIconLink = styled.a`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    color: rgb(2, 131, 133);
+    color: #00fbff;
   }
 
   @media (max-width: 480px) {

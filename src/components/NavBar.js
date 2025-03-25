@@ -4,7 +4,7 @@ import styled from "styled-components";
 import CvBeatriz from "../assets/pdf/CV-Beatriz-Matias.pdf";
 
 const StyledHeader = styled.header`
-  background-color: rgb(195, 209, 209);
+  background: linear-gradient(to bottom, rgb(4, 31, 46), #000);
   padding: 0.625rem;
   text-align: center;
   position: fixed;
@@ -38,7 +38,7 @@ const NavLink = styled(Link)`
   font-weight: 600;
   font-size: 1.25rem;
   text-decoration: none;
-  color: #333;
+  color: #fff;
   transition: all 0.3s ease-in-out;
 
   &:hover {
@@ -54,7 +54,7 @@ const NavLink = styled(Link)`
 const DownloadButton = styled.a`
   margin-left: 1.25rem;
   padding: 0.625rem 1.25rem;
-  background-color: #00fbff;
+  background-color: #00a3b0;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -62,7 +62,7 @@ const DownloadButton = styled.a`
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #00a3b0;
+    background-color: rgb(0, 124, 126);
   }
 
   @media (max-width: 480px) {

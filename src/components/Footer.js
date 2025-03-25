@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const ContainerFooter = styled.footer`
-  background-color: rgb(195, 209, 209);
+  background: linear-gradient(to top, rgb(4, 31, 46), #000);
   width: 100%;
   position: fixed;
   text-align: center;
@@ -14,7 +14,7 @@ const ContainerFooter = styled.footer`
 const DescriçãoFooter = styled.p`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9375rem;
-  color: #000;
+  color: #fff;
 
   @media (max-width: 480px) {
     font-size: 1.5rem;
