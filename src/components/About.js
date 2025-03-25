@@ -40,6 +40,7 @@ const TextContent = styled.p`
   font-size: 1.25rem;
   color: #fff;
   margin: 0.625rem 1.25rem;
+  line-height: 1.4;
 
   @media (max-width: 480px) {
     width: 40rem;
@@ -112,9 +113,10 @@ const About = () => {
         <MainHeading>Desenvolvedora Front-end</MainHeading>
         <TextContent>
           Olá! Eu me chamo Beatriz Matias, sou desenvolvedora de software
-          formada em Análise e Desenvolvimento de Sistemas, com especialidade em
-          front-end. Meu maior objetivo é agregar valor, criando projetos e
-          soluções para uma melhor experiência digital.
+          formada em Análise e Desenvolvimento de Sistemas e atualmente estou
+          cursando pós-graduação em Desenvolvimento Full Stack. Meu maior
+          objetivo é agregar valor, criando projetos e soluções de qualidade,
+          para uma melhor experiência digital.
         </TextContent>
         <Heading>Vamos nos conectar?</Heading>
         <SocialIcons>

@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-import imgPortfolio from "../assets/img/Capa-portfolio.png";
+import imgClimate from "../assets/img/imgClimate.png";
+import imgFavoriteMovie from "../assets/img/imgFavoriteMovie.png";
 import imgFokus from "../assets/img/img-fokus.png";
 import imgSecretWord from "../assets/img/img-secret-word.png";
+import imgPortfolio from "../assets/img/img-portfolio.png";
 
 const Container = styled.div`
   min-width: 100vh;
@@ -114,6 +116,7 @@ const DescriptionProject = styled.p`
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   max-width: 90%;
+  line-height: 1.4;
 
   @media (max-width: 768px) {
     font-size: 2rem;
@@ -138,15 +141,11 @@ const IconsProject = styled.a`
 
   @media (max-width: 480px) {
     font-size: 3rem;
-    padding-bottom: 13rem;
+    padding-bottom: 18rem;
   }
 
   @media (max-width: 375px) {
-    padding-bottom: 0.625rem;
-  }
-
-  @media (max-width: 375px) {
-    padding-bottom: 10rem;
+    padding-bottom: 18rem;
   }
 `;
 
@@ -184,9 +183,29 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Climate",
+      description:
+        "Este é um projeto web de previsão do tempo que permite aos usuários acessar a temperatura atual e a previsão para os próximos 5 dias de qualquer localidade. Desenvolvido com React e Vite, integrado com API do OpenWeatherMap. Oferece uma experiência de usuário intuitiva e responsiva.",
+      image: imgClimate,
+      socialLinks: {
+        github: "https://github.com/beamatias/climate",
+        live: "https://climate-wine-ten.vercel.app/",
+      },
+    },
+    {
+      title: "Favorite Movie",
+      description:
+        "Este projeto é um catálogo web de filmes que permite explorar informações fornecidas sobre os filmes mais bem avaliados. Desenvolvido com React e Vite, integrado com API The Movie Database (TMDB) ele oferece uma experiência de usuário fluida e responsiva, adaptando-se a diferentes tamanhos de tela.",
+      image: imgFavoriteMovie,
+      socialLinks: {
+        github: "https://github.com/beamatias/Favorite-Movie",
+        live: "https://favorite-movie-neon.vercel.app/",
+      },
+    },
+    {
       title: "Fokus",
       description:
-        "Este é um projeto desenvolvido para ajudar os usuários a manterem o foco durante seus períodos de estudo. O objetivo principal é proporcionar uma experiência tranquila e sem distrações, com pequenas pausas inclusas, incentivando a concentração e o rendimento acadêmico.",
+        "Este é um projeto desenvolvido em JavaScript, para ajudar os usuários a manterem o foco durante seus períodos de estudo. O objetivo principal é proporcionar uma experiência tranquila e sem distrações, com pequenas pausas inclusas, incentivando a concentração e o rendimento acadêmico.",
       image: imgFokus,
       socialLinks: {
         github: "https://github.com/beamatias/Fokus",
@@ -196,7 +215,7 @@ const Projects = () => {
     {
       title: "Palavra Secreta",
       description:
-        "Este é um jogo da palavra secreta para testar a capacidade cognitiva. O objetivo do jogo é adivinhar uma palavra secreta, chutando letras uma a uma. Em cada tentativa, as letras corretas são reveladas e as incorretas são marcadas.",
+        "Este é um jogo da palavra secreta para testar a capacidade cognitiva. Desenvolvido com React e JavaScript, o objetivo do jogo é adivinhar uma palavra secreta, chutando letras uma a uma. Em cada tentativa, as letras corretas são reveladas e as incorretas são marcadas.",
       image: imgSecretWord,
       socialLinks: {
         github: "https://github.com/beamatias/Secret-Word",
@@ -206,7 +225,7 @@ const Projects = () => {
     {
       title: "Portfólio Pessoal",
       description:
-        "Este é meu Portfólio pessoal, onde você encontra informaçõe sobre mim e meus projetos.",
+        "Este é meu Portfólio pessoal, desenvolvido em React e JavaScript. Nele você encontra informaçõe sobre mim e meus projetos.",
       image: imgPortfolio,
       socialLinks: {
         github: "https://github.com/beamatias/Portfolio-Beatriz",
