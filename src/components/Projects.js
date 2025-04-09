@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 import imgClimate from "../assets/img/imgClimate.png";
+import imgPrograma from "../assets/img/imgPrograma.png";
 import imgFavoriteMovie from "../assets/img/imgFavoriteMovie.png";
 import imgFokus from "../assets/img/img-fokus.png";
 import imgSecretWord from "../assets/img/img-secret-word.png";
@@ -193,6 +194,15 @@ const Projects = () => {
       },
     },
     {
+      title: "Compartilhando o Planeta",
+      description:
+        "Apresento um projeto autônomo, desenvolvido mediante a utilização das tecnologias React e Javascript, com a aplicação da biblioteca Styled Components para estilização. O resultado consiste em um site responsivo, para um programa de transmissão veiculado pelo canal C3TV. (Código não exibido por privacidade)",
+      image: imgPrograma,
+      socialLinks: {
+        live: "https://compartilhando-planeta.vercel.app/",
+      },
+    },
+    {
       title: "Favorite Movie",
       description:
         "Este projeto é um catálogo web de filmes que permite explorar informações fornecidas sobre os filmes mais bem avaliados. Desenvolvido com React e Vite, integrado com API The Movie Database (TMDB) ele oferece uma experiência de usuário fluida e responsiva, adaptando-se a diferentes tamanhos de tela.",
@@ -215,7 +225,7 @@ const Projects = () => {
     {
       title: "Palavra Secreta",
       description:
-        "Este é um jogo da palavra secreta para testar a capacidade cognitiva. Desenvolvido com React e JavaScript, o objetivo do jogo é adivinhar uma palavra secreta, chutando letras uma a uma. Em cada tentativa, as letras corretas são reveladas e as incorretas são marcadas.",
+        "Este é um projeto desenvolvido para desktop, trata-se do jogo da palavra secreta para testar a capacidade cognitiva. Desenvolvido com React e JavaScript, o objetivo do jogo é adivinhar uma palavra secreta, chutando letras uma a uma. Em cada tentativa, as letras corretas são reveladas e as incorretas são marcadas.",
       image: imgSecretWord,
       socialLinks: {
         github: "https://github.com/beamatias/Secret-Word",
@@ -262,13 +272,15 @@ const Projects = () => {
               <DescriptionProject>{project.description}</DescriptionProject>
 
               <DivIcons>
-                <IconsProject
-                  href={project.socialLinks.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub />
-                </IconsProject>
+                {index !== 1 && (
+                  <IconsProject
+                    href={project.socialLinks.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub />
+                  </IconsProject>
+                )}
                 <IconsProject
                   href={project.socialLinks.live}
                   target="_blank"
