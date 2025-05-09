@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import CvBeatriz from "../assets/pdf/CV-BeatrizMatias-2025.pdf";
+import CvBeatriz from "../assets/pdf/Cv-BeatrizMatias2025.pdf";
 
 const StyledHeader = styled.header`
   background: linear-gradient(to bottom, rgb(4, 31, 46), #000);
